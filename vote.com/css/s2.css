@@ -1,0 +1,189 @@
+/*Settings Page --CSS*/
+
+@font-face {
+    
+    font-family: aquire;
+    src: url(../aquire-font/AquireBold-8Ma60.otf);
+   }
+
+   @font-face {
+    font-family: mars;
+    src: url(../Mars/Mars\ Thin.ttf);
+   }
+
+   @font-face {
+    font-family: aquatico;
+    src: url(../aquatico/Aquatico/Aquatico-Regular.otf);
+   }
+
+   @font-face {
+    font-family: randolph;
+    src: url(../randolph-unique-sans-serif-font/Randolph/RANDOLPH.woff);
+   }
+
+   @font-face {
+    font-family: glitch;
+    src: url(../cf_glitch_city/CFGlitchCity-Regular.ttf);
+   }
+
+   @font-face {
+    font-family: larken;
+    src: url(../Larken-Serif-Trial-Font/LarkenDEMO-Black.otf);
+   }
+
+   @font-face {
+    font-family: lumi;
+    src: url(../lumiera/Lumiera.ttf);
+   }
+
+
+
+body{
+    margin: 0;
+}
+
+/*-TOP--*/
+
+#top{
+    background-color: rgb(255, 201, 201);
+}
+
+/*navigation*/
+
+.nav-item{
+    padding-right: 40px;
+}
+
+a.nav-link {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      #000000 50%,
+      rgb(62, 61, 61) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-link:before {
+    content: '';
+    background: #000000;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-link:hover {
+   background-position: 0;
+  }
+  
+  a.nav-link:hover::before {
+    width:100%;
+  }
+
+  label{
+    display: inline-block;
+    background-color: indigo;
+    color: white;
+    padding: 0.5rem;
+    padding-bottom: 1.5rem;
+    font-family: larken;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+
+/*Settings*/
+
+.main-settings{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.pl-name{
+    padding-bottom: 30px;
+    font-family: lumi;
+}
+
+.cn-head{
+    font-size: 40px;
+    color: firebrick;
+    font-family: larken;
+    
+}
+.cn-names{
+    padding-top: 25px;
+    font-family: lumi;
+    
+}
+
+.btn{
+    position: relative;
+    background-color: #000000;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    float: right;
+    
+}
+
+.btn:after {
+    content: "";
+    background: yellow;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+    
+  }
+
+  .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+    
+  }
+
+
+  #footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+
+
+
+
+ 

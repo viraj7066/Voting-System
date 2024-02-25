@@ -1,0 +1,171 @@
+/*Result Page -- CSS*/
+@font-face {
+    
+    font-family: aquire;
+    src: url(../aquire-font/AquireBold-8Ma60.otf);
+   }
+
+   @font-face {
+    font-family: mars;
+    src: url(../Mars/Mars\ Thin.ttf);
+   }
+
+   @font-face {
+    font-family: aquatico;
+    src: url(../aquatico/Aquatico/Aquatico-Regular.otf);
+   }
+
+   @font-face {
+    font-family: randolph;
+    src: url(../randolph-unique-sans-serif-font/Randolph/RANDOLPH.woff);
+   }
+
+   @font-face {
+    font-family: glitch;
+    src: url(../cf_glitch_city/CFGlitchCity-Regular.ttf);
+   }
+
+   @font-face {
+    font-family: larken;
+    src: url(../Larken-Serif-Trial-Font/LarkenDEMO-Black.otf);
+   }
+
+   @font-face {
+    font-family: lumi;
+    src: url(../lumiera/Lumiera.ttf);
+   }
+
+
+
+body{
+    margin: 0;
+    background-color: rgb(255, 201, 201);
+}
+
+/*-TOP--*/
+
+#top{
+    background-color: rgb(255, 201, 201);
+    
+}
+    
+    #footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: lightyellow;
+        text-align: center;
+    }
+
+/*navigation*/
+
+.nav-item{
+    padding-right: 100px;
+    color: black;
+   
+}
+
+
+
+a.nav-link {
+    background-image: linear-gradient(
+      to right,
+      rgb(0, 0, 0),
+      #000000 50%,
+      rgb(62, 61, 61) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-link:before {
+    content: '';
+    background: #000000;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-link:hover {
+   background-position: 0;
+  }
+  
+  a.nav-link:hover::before {
+    width:100%;
+  }
+
+
+
+
+/*Results*/
+.main-results{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin: auto;
+    font-family: aquatico;
+}
+
+
+
+.styled-table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: left;
+    font-size: 20px;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    font-family: lumi;
+    font-size: 30px;
+}
+
+.styled-table th {
+    font-family: larken;
+
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ffffff;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+
+
+
+

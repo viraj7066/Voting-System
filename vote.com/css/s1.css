@@ -1,0 +1,180 @@
+/*Home Page--CSS*/
+@font-face {
+    font-family: aquire;
+    src: url(../aquire-font/AquireBold-8Ma60.otf);
+   }
+
+   @font-face {
+    font-family: mars;
+    src: url(../Mars/Mars\ Thin.ttf);
+   }
+
+   @font-face {
+    font-family: aquatico;
+    src: url(../aquatico/Aquatico/Aquatico-Regular.otf);
+   }
+
+   @font-face {
+    font-family: randolph;
+    src: url(../randolph-unique-sans-serif-font/Randolph/RANDOLPH.woff);
+   }
+
+   @font-face {
+    font-family: larken;
+    src: url(../Larken-Serif-Trial-Font/LarkenDEMO-Black.otf);
+   }
+
+   @font-face {
+    font-family: lumi;
+    src: url(../lumiera/Lumiera.ttf);
+   }
+
+   @font-face {
+    font-family: ramus;
+    src: url(../ramus-font/RamusSemiBold-JRlnx.ttf);
+   }
+
+body{
+    margin: 0;
+}
+
+#top{
+    background-color: rgb(0, 0, 0);
+}
+
+/*Navigation*/
+
+.navbar-nav{
+    padding-right: 20px;
+    font-family: aquatico;
+    font-size: small;
+}
+
+.nav-link{
+    padding-left: 5px;
+}
+
+
+
+
+a.nav-link {
+    background-image: linear-gradient(
+      to right,
+      #ffffff,
+      #ffffff 50%,
+      rgb(145, 143, 143) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-link:before {
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a.nav-link:hover {
+   background-position: 0;
+  }
+  
+  a.nav-link:hover::before {
+    width:100%;
+  }
+
+
+
+
+
+/*Poll Side*/
+
+.poll-name{
+    text-align: center;
+    padding-top: 20px;
+    color: #FFFFFF;
+    font-family: aquire;
+    font-size: 45px;
+}
+
+.rw1{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.rw2{
+    padding-top: 70px;
+    padding-bottom: 180px;
+    text-align: center;
+}
+
+.cn{
+    padding-bottom: 15px;
+    color: white;
+    font-family: ramus;
+    font-size: 35px;
+}
+.btn{
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn:after {
+    content: "";
+    background: blue;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+    
+  }
+
+  .btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+    
+  }
+
+
+
+  #footer{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background-color: lightyellow;
+      text-align: center;
+  }
+
+  .link-icon{
+      color: black;
+      font-size: 25px;
+      padding-right: 10px;
+  }
